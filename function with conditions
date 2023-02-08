@@ -1,0 +1,23 @@
+class animal {
+    constructor(color="black",hight="2ft",speed="10km/hr"){
+        this.color=color
+        this.hight=hight
+        this.speed=speed
+        
+    }
+    is_tiger() {
+        if((this.color=="yello-white" || this.color=="white-black") && this.hight<="5ft" && this.speed<="30km/hr")
+        return "Yes this is tiger";
+        else
+        return "this is not tiger"
+
+    }
+    get_no_years = function(x){
+        console.log(x-this.hight)
+    }
+}
+let tiger = new animal("yello-white",8.5,"20km/hr");
+let dog = new animal();
+console.log(tiger.is_tiger());
+console.log(dog.color,dog.hight);
+tiger.get_no_years(10);
